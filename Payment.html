@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+
+<body>
+    <a href="index.html">
+        <img src="/public/Icons/Backarrow.svg" alt="" height="40" width="40" >
+    </a>
+    <form action="">
+        <h1>Payment Form</h1>
+        <hr>
+        <h2>Contact Information</h2>
+        <h6>*Signifies Required Fields</h6>
+        <p>Name:* <input type="text" placeholder="Input Name" name="name" required ></p>
+        <p>Gender:*
+            <input type="radio" name="gender" id="male" required > Male
+            <input type="radio" name="gender" id="female" required >
+            Female
+        </p>
+        <p>Address:<textarea name="address" col="100" rows="8"></textarea></p>
+        <p>Email:*   <input type="email" name="Email" id="" required></p>
+        <p>Pincode:* <input required type="number" name="pincode" id="pin"></p>
+        <h2>Payment Information</h2>
+        <p>Card Type:* 
+           <select name="card_type" id="card_type" required >
+            <option value="">Seleect A Card Type</option>
+            <option value="visa">Visa</option>
+            <option value="rupay">Rupay</option>
+            <option value="master">Master Card</option>
+            <option value="diners">Diner's Club</option>
+           </select>
+        </p>
+           <p>Card Number:* <input type="number" required name="card_number" ></p>    
+           <p>Expiry Date:* <input required type="month" name="expiry_date"  ></p>
+           <p>CVV:* <input type="password" required name="cvv" id=""></p>
+           <input type="submit" name="submit" id="submit" value="submit" >
+           <input type="reset" name="reset" id="reset">
+    </form>
+</body>
+
+</html>
